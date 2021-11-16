@@ -29,13 +29,90 @@
 /* common */
 body {
   font-family: 'Montserrat', sans-serif;
+
 }
 /* header */
+.header {
+  color: #060D10;
+  background-color: #66D1FF;
+  font-weight: 500;
+}
+.header a {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  color: inherit;
+}
+.header-phone {
+  font-size: 28px;
+  line-height: 34px;
+}
 
 /* promo */
+.promo {
+  color: #fff;
+  background-color: gray;
+  text-shadow: 1px 1px 2px #060D10;
+}
+.promo-title {
+  font-family: 'Oswald';
+  font-size: 60px;
+  line-height: 89px;
+  text-transform: uppercase;
+}
+.promo-text {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+}
 
 /* about */
-
+.about {
+  background-color: rgba(102, 209, 255, .1);
+}
+.about-slogan {
+  font-family: 'Oswald';
+  font-size: 48px;
+  line-height: 167%;
+  text-transform: uppercase;
+}
+.about-caption {
+  font-family: 'Oswald';
+  font-size: 32px;
+  line-height: 167%;
+  text-transform: uppercase;
+}
+.about-text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+  opacity: 0.8;
+}
 /* lead */
-
+.lead-slogan {
+  font-family: 'Oswald';
+  font-size: 48px;
+  line-height: 167%;
+  text-transform: uppercase;
+}
+.lead a {
+  font-size: 36px;
+  line-height: 44px;
+  text-decoration: none;
+  color: inherit;
+}
 /* footer */
+.footer {
+  color: #fff;
+  background-color: #060D10;
+}
+.footer-slogan {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 167%;
+}
+.copyright {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
