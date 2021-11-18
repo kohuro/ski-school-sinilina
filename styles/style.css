@@ -29,8 +29,13 @@
 /* common */
 body {
   font-family: 'Montserrat', sans-serif;
-
 }
+.container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px dotted orange;
+}
+
 /* header */
 .header {
   color: #060D10;
@@ -38,10 +43,16 @@ body {
   font-weight: 500;
 }
 .header a {
+  width: 276px;
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
+  text-align: center;
   color: inherit;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 8px 41px;
 }
 .header-phone {
   font-size: 28px;
@@ -51,23 +62,33 @@ body {
 /* promo */
 .promo {
   color: #fff;
-  background-color: gray;
+  background-image: url('../images/promo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-shadow: 1px 1px 2px #060D10;
+}
+.promo-fade {
+  padding: 240px 0 260px;
+  background-color: rgba(6, 13, 16, .25);
 }
 .promo-title {
   font-family: 'Oswald';
   font-size: 60px;
   line-height: 89px;
   text-transform: uppercase;
+  text-align: center;
 }
 .promo-text {
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
+  text-align: center;
 }
 
 /* about */
 .about {
+  padding: 170px 0;
   background-color: rgba(102, 209, 255, .1);
 }
 .about-slogan {
@@ -75,6 +96,10 @@ body {
   font-size: 48px;
   line-height: 167%;
   text-transform: uppercase;
+  text-align: center;
+}
+.about-item {
+  width: 406px;
 }
 .about-caption {
   font-family: 'Oswald';
@@ -89,17 +114,31 @@ body {
   opacity: 0.8;
 }
 /* lead */
+.lead {
+  padding: 170px 0 180px;
+}
 .lead-slogan {
   font-family: 'Oswald';
   font-size: 48px;
   line-height: 167%;
   text-transform: uppercase;
+  text-align: center;
 }
 .lead a {
+  width: 505px;
   font-size: 36px;
   line-height: 44px;
   text-decoration: none;
   color: inherit;
+  border: 3px solid #060D10;
+  border-radius: 4px;
+  padding: 20px 107px 22px;
+}
+.lead-pic {
+  width: 297px;
+  height: 297px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #C4C4C4;
 }
 /* footer */
 .footer {
