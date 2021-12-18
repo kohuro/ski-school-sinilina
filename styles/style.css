@@ -31,6 +31,10 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -52,7 +56,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.header .btn {
+.header-btn {
   display: inline-block;
   padding: 8px 41px;
 
@@ -91,6 +95,7 @@ body {
   background-color: rgba(6, 13, 16, .25);
 }
 .promo-title {
+  margin-top: 0;
   margin-bottom: 60px;
   font-family: 'Oswald';
   font-size: 60px;
@@ -158,6 +163,7 @@ body {
   line-height: 140%;
   opacity: 0.8;
 }
+
 /* lead */
 .lead {
   padding: 170px 0 180px;
@@ -174,7 +180,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.lead a {
+.lead-btn {
   display: inline-block;
 
   padding: 20px 107px;
@@ -190,6 +196,7 @@ body {
   border: 3px solid #060D10;
   border-radius: 4px;
 }
+/* не знаю, почему не центрируется кнопка */
 .lead ul {
   display: flex;
   justify-content: space-between;
@@ -218,7 +225,7 @@ body {
   align-items: center;
 }
 .footer-slogan {
-  margin-right: 50px;
+  margin: 0 50px 0 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 167%;
@@ -230,50 +237,26 @@ body {
   padding: 0;
   list-style: none;
 }
-.footer li {
+.social-item {
   margin-right: 20px;
-  height: 40px;
-  /* без заданной высоты почему-то автоматически ставится 60px и не поддаётся выравниваю */
+  }
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
-.twitter-icon {
-  height: 40px;
-  width: 40px;
-  background-image: url('../images/twitter.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.li-icon {
-  height: 40px;
-  width: 40px;
-  background-image: url('../images/linkedin.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.google-icon {
-  height: 40px;
-  width: 40px;
-  background-image: url('../images/google.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.facebook-icon {
-  height: 40px;
-  width: 40px;
-  background-image: url('../images/facebook.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 .social-text {
   font-size: 0;
   opacity: 0;
 }
 
 .copyright {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   font-weight: 500;
   font-size: 18px;
