@@ -33,12 +33,14 @@
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
 .container {
   margin: 0 auto;
   width: 1278px;
@@ -51,28 +53,30 @@ body {
   color: #060D10;
   background-color: #66D1FF;
 }
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header-btn {
   display: inline-block;
   padding: 8px 41px;
-
   font-size: 24px;
   line-height: 29px;
   text-decoration: none;
   text-align: center;
   color: inherit;
-
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 4px;
 }
+
 .header-logo {
   width: 296px;
 }
+
 .header-phone {
   font-size: 28px;
   line-height: 34px;
@@ -84,16 +88,17 @@ body {
 .promo {
   color: #fff;
   text-shadow: 1px 1px 2px #060D10;
-
   background-image: url('../images/promo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .promo-fade {
   padding: 240px 0 260px;
   background-color: rgba(6, 13, 16, .25);
 }
+
 .promo-title {
   margin-top: 0;
   margin-bottom: 60px;
@@ -103,6 +108,7 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
+
 .promo-text {
   margin: 0;
   font-weight: 500;
@@ -116,48 +122,47 @@ body {
   padding: 170px 0;
   background-color: rgba(102, 209, 255, .1);
 }
+
 .about-title {
   font-size: 0;
   opacity: 0;
 }
+
 .about-slogan {
   margin-top: 0;
   margin-bottom: 30px;
-
   font-family: 'Oswald';
   font-size: 48px;
   line-height: 167%;
   text-transform: uppercase;
   text-align: center;
 }
-.about ul {
+
+.about-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-
   margin: 0 -15px;
   padding: 0;
-
   list-style: none;
 }
-.about li {
-  flex-basis: 33.3%;
+
+.about-item {
+  flex-basis: 33.33%;
   margin-top: 70px;
   padding: 0 15px;
 }
+
 .about-caption {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-family: 'Oswald';
   font-size: 32px;
   line-height: 167%;
   text-transform: uppercase;
 }
+
 .about-text {
   margin: 0;
-
   font-weight: 400;
   font-size: 26px;
   line-height: 140%;
@@ -166,51 +171,57 @@ body {
 
 /* lead */
 .lead {
-  padding: 170px 0 180px;
-  /* градиент начинается не в том месте */
+  padding-bottom: 180px;
+  text-align: center;
   background: linear-gradient(208.35deg, rgba(102, 209, 255, .1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
 }
+
+.lead:before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 170px;
+  width: 1278px;
+  border-bottom: 1px solid #060D10;
+  opacity: 0.5;
+}
+
 .lead-slogan {
   margin-top: 0;
   margin-bottom: 60px;
-
   font-family: 'Oswald';
   font-size: 48px;
   line-height: 167%;
   text-transform: uppercase;
   text-align: center;
 }
+
 .lead-btn {
   display: inline-block;
-
   padding: 20px 107px;
   width: 505px;
-
   font-size: 36px;
   line-height: 44px;
   text-decoration: none;
-  text-align: center;
-  /* не знаю как центрировать */
   color: inherit;
-
   border: 3px solid #060D10;
   border-radius: 4px;
 }
-/* не знаю, почему не центрируется кнопка */
-.lead ul {
+
+.lead-list {
   display: flex;
-  justify-content: space-between;
-
-  margin-top: 130px;
-  margin-bottom: 0;
+  margin: 130px -15px 0;
   padding: 0;
-
   list-style: none;
 }
+
+.lead-item {
+  width: 25%;
+  padding: 0 15px;
+}
+
 .lead-pic {
   width: 297px;
   height: 297px;
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -220,26 +231,31 @@ body {
   color: #fff;
   background-color: #060D10;
 }
+
 .footer-wrap {
   display: flex;
   align-items: center;
 }
+
 .footer-slogan {
   margin: 0 50px 0 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 167%;
 }
-.footer ul {
+
+.social-list {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .social-item {
   margin-right: 20px;
   }
+
 .social-link {
   display: block;
   width: 35px;
